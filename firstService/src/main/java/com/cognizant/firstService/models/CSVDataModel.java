@@ -5,12 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
 public class CSVDataModel {
 
-    @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private Integer id;
     private String productName;
     private Integer productQuantity;
     private Double productPrice;
@@ -27,14 +23,6 @@ public class CSVDataModel {
         this.productQuantity = productQuantity;
         this.productPrice = productPrice;
         this.productIsAvailable = productIsAvailable;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Integer getId() {
-        return this.id;
     }
 
     public void setProductName(String productName) {
@@ -71,7 +59,7 @@ public class CSVDataModel {
 
     @Override
     public String toString() {
-        return "CSVDataModel [id=" + id + ", productIsAvailable=" + productIsAvailable + ", productName=" + productName
+        return "CSVDataModel [productIsAvailable=" + productIsAvailable + ", productName=" + productName
                 + ", productPrice=" + productPrice + ", productQuantity=" + productQuantity + "]";
     }
 
