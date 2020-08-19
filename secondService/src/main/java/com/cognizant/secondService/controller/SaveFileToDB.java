@@ -21,9 +21,6 @@ import org.springframework.web.client.RestTemplate;
 public class SaveFileToDB {
 
     @Autowired
-    RestTemplate restTemplate;
-
-    @Autowired
     ProductService productSevice;
 
     @GetMapping("/")
@@ -33,10 +30,7 @@ public class SaveFileToDB {
 
     @PostMapping("/saveData/{file_name}")
     public @ResponseBody List<CSVDataModel> saveData(@PathVariable("file_name") String fileName) {
-        System.out.println("Hello\n\n\n\n\n");
-        CSVDataModel[] csvDataModels = restTemplate.getForObject("http://first-service/fileReader/fileName/" + fileName,
-                CSVDataModel[].class);
-        return productSevice.saveAll(csvDataModels);
+        return productSevice.saveAll(fileName);
     }
 
     @GetMapping("/getAll")

@@ -6,7 +6,7 @@ import java.util.Optional;
 import com.cognizant.secondService.models.CSVDataModel;
 
 public interface ProductService {
-    public List<CSVDataModel> saveAll(CSVDataModel[] csvDataModels);
+    public List<CSVDataModel> saveAll(String fileName);
 
     public String deleteById(Integer id);
 

@@ -6,20 +6,34 @@ import java.util.Optional;
 import com.cognizant.secondService.dao.ProductRepository;
 import com.cognizant.secondService.models.CSVDataModel;
 import com.google.common.collect.Iterators;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 @Service
 public class ProductServiceImpl implements ProductService {
 
     @Autowired
+    RestTemplate restTemplate;
+
+    @Autowired
     ProductRepository productRepository;
 
     @Override
-    public List<CSVDataModel> saveAll(CSVDataModel[] csvDataModels) {
+    @HystrixCommand(fallbackMethod = "fallback_saveAll", commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "7000") })
+    public List<CSVDataModel> saveAll(String fileName) {
+        CSVDataModel[] csvDataModels = restTemplate.getForObject("http://first-service/fileReader/fileName/" + fileName,
+                CSVDataModel[].class);
         Iterable<CSVDataModel> productList = () -> Iterators.forArray(csvDataModels);
         return productRepository.saveAll(productList);
+    }
+
+    public List<CSVDataModel> fallback_saveAll(String fileName) {
+        return null;
     }
 
     @Override
