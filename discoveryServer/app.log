@@ -1,0 +1,25 @@
+2020-08-20 08:40:45,594 INFO com.cognizant.discoveryServer.DiscoveryServerApplicationTests [main] No active profile set, falling back to default profiles: default
+2020-08-20 08:40:49,966 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2020-08-20 08:40:49,966 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-20 08:40:49,990 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2020-08-20 08:40:49,990 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-20 08:40:58,939 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2020-08-20 08:40:58,943 INFO com.netflix.discovery.DiscoveryClient [main] Client configured to neither register nor query for data.
+2020-08-20 08:40:59,260 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1597893059229 with initial instances count: 0
+2020-08-20 08:40:59,505 INFO com.netflix.eureka.DefaultEurekaServerContext [main] Initializing ...
+2020-08-20 08:40:59,513 INFO com.netflix.eureka.cluster.PeerEurekaNodes [main] Adding new peer nodes [http://localhost:8761/eureka/]
+2020-08-20 08:41:01,464 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON encoding codec LegacyJacksonJson
+2020-08-20 08:41:01,464 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON decoding codec LegacyJacksonJson
+2020-08-20 08:41:01,472 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML encoding codec XStreamXml
+2020-08-20 08:41:01,472 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML decoding codec XStreamXml
+2020-08-20 08:41:02,002 INFO com.netflix.eureka.cluster.PeerEurekaNodes [main] Replica node URL:  http://localhost:8761/eureka/
+2020-08-20 08:41:02,032 INFO com.netflix.eureka.registry.AbstractInstanceRegistry [main] Finished initializing remote region registries. All known remote regions: []
+2020-08-20 08:41:02,033 INFO com.netflix.eureka.DefaultEurekaServerContext [main] Initialized
+2020-08-20 08:41:02,523 INFO com.cognizant.discoveryServer.DiscoveryServerApplicationTests [main] Started DiscoveryServerApplicationTests in 136.754 seconds (JVM running for 144.547)
+2020-08-20 08:41:02,594 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-10] Got 1 instances from neighboring DS node
+2020-08-20 08:41:02,596 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-10] Renew threshold is: 1
+2020-08-20 08:41:02,597 INFO com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl [Thread-10] Changing status to UP
+2020-08-20 08:41:21,946 INFO com.netflix.eureka.DefaultEurekaServerContext [SpringContextShutdownHook] Shutting down ...
+2020-08-20 08:41:22,007 INFO com.netflix.eureka.DefaultEurekaServerContext [SpringContextShutdownHook] Shut down
+2020-08-20 08:41:22,038 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Shutting down DiscoveryClient ...
+2020-08-20 08:41:22,054 INFO com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Completed shut down of DiscoveryClient

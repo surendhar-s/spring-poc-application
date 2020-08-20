@@ -1,0 +1,43 @@
+2020-08-20 08:42:55,479 INFO com.cognizant.firstService.FirstServiceApplication [main] No active profile set, falling back to default profiles: default
+2020-08-20 08:43:04,017 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2020-08-20 08:43:04,020 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-20 08:43:05,654 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2020-08-20 08:43:06,068 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2020-08-20 08:43:06,069 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-20 08:43:06,258 WARN com.netflix.config.sources.URLConfigurationSource [main] No URLs will be polled as dynamic configuration sources.
+2020-08-20 08:43:06,258 INFO com.netflix.config.sources.URLConfigurationSource [main] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-20 08:43:09,558 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2020-08-20 08:43:12,727 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON encoding codec LegacyJacksonJson
+2020-08-20 08:43:12,728 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON decoding codec LegacyJacksonJson
+2020-08-20 08:43:14,026 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML encoding codec XStreamXml
+2020-08-20 08:43:14,026 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML decoding codec XStreamXml
+2020-08-20 08:43:14,321 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2020-08-20 08:43:14,917 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2020-08-20 08:43:14,919 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2020-08-20 08:43:14,924 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2020-08-20 08:43:14,928 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2020-08-20 08:43:14,929 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2020-08-20 08:43:14,936 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2020-08-20 08:43:14,938 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2020-08-20 08:43:16,093 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2020-08-20 08:43:16,114 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2020-08-20 08:43:16,134 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-20 08:43:16,234 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1597893196143 with initial instances count: 0
+2020-08-20 08:43:16,242 INFO com.netflix.discovery.DiscoveryClient [main] Saw local status change event StatusChangeEvent [timestamp=1597893196242, current=UP, previous=STARTING]
+2020-08-20 08:43:16,289 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FIRST-SERVICE/Surendhar:first-service:8081: registering service...
+2020-08-20 08:43:17,276 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FIRST-SERVICE/Surendhar:first-service:8081 - registration status: 204
+2020-08-20 08:43:17,592 INFO com.cognizant.firstService.FirstServiceApplication [main] Started FirstServiceApplication in 27.542 seconds (JVM running for 28.759)
+2020-08-20 08:43:46,115 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+2020-08-20 08:43:46,115 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+2020-08-20 08:43:46,123 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+2020-08-20 08:43:46,123 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+2020-08-20 08:43:46,123 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+2020-08-20 08:43:46,131 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+2020-08-20 08:43:46,139 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+2020-08-20 08:43:46,205 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+2020-08-20 08:44:18,154 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-20 08:48:14,949 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-08-20 08:53:14,954 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2020-08-20 08:56:52,074 WARN com.netflix.discovery.DiscoveryClient [SpringContextShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1597894012074, current=DOWN, previous=UP]
+2020-08-20 08:56:52,098 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FIRST-SERVICE/Surendhar:first-service:8081: registering service...
+2020-08-20 08:56:53,150 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_FIRST-SERVICE/Surendhar:first-service:8081 - registration status: 204

@@ -24,10 +24,11 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     @HystrixCommand(fallbackMethod = "fallback_saveAll", commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "7000") })
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "10000") })
     public List<CSVDataModel> saveAll(String fileName) {
         CSVDataModel[] csvDataModels = restTemplate.getForObject("http://first-service/fileReader/fileName/" + fileName,
                 CSVDataModel[].class);
+        System.out.println("\n\n Completed API call\n\n");
         Iterable<CSVDataModel> productList = () -> Iterators.forArray(csvDataModels);
         return productRepository.saveAll(productList);
     }
